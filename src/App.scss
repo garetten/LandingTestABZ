@@ -1,56 +1,52 @@
-
-.App{
+.App {
   min-height: 100%;
   width: 100%;
   overflow: hidden;
 }
 
-
-.main{
+.main {
   width: 100%;
-  background-color: #F8F8F8;
-  &__container{
+  background-color: #f8f8f8;
+  &__container {
     max-width: 1170px;
     margin: 0 auto;
     padding: 164px 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url('./assets/bg_image_main.png') center/cover no-repeat;
-    @media(max-width:768px){
-      &{
+    background: url('./assets/bg_image_main.jpg') center/cover no-repeat;
+    @media (max-width: 768px) {
+      & {
         padding: 89px 0;
       }
     }
-    @media(max-width:768px){
-      &{
+    @media (max-width: 768px) {
+      & {
         padding: 89px 0;
       }
     }
-    @media(max-width:361px){
-      &{
+    @media (max-width: 361px) {
+      & {
         padding: 40px 0 75px 0;
       }
     }
-
   }
-
 }
 
-.content{
+.content {
   max-width: 380px;
   color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  @media(max-width:420px){
-    &{
+  @media (max-width: 420px) {
+    & {
       margin: 0 16px;
     }
   }
 
-  &__title{
+  &__title {
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 400;
@@ -59,7 +55,7 @@
     margin-bottom: 21px;
     text-align: center;
   }
-  &__text{
+  &__text {
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 400;
@@ -68,5 +64,4 @@
     margin-bottom: 36px;
     text-align: center;
   }
-
 }
