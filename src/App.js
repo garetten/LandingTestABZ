@@ -6,7 +6,6 @@ import CartList from './component/CartList/CartList'
 import Form from './component/Form/Form'
 
 import { useState } from 'react'
-import Preloader from './component/ui/Preloader/Preloader'
 
 function App() {
   const [page, setPage] = useState(1)
