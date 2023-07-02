@@ -1,63 +1,62 @@
-.wrapper{
-    width: 100%;
-    background-color: #F8F8F8;;
+.wrapper {
+  width: 100%;
+  background-color: #f8f8f8;
 }
 
-.cart__container{
-    max-width: 1170px;
-    margin: 0 auto;
-    background-color: inherit;
-    padding-top: 170px;
-    @media(max-width:1170px){
-        &{
-            max-width: 904px;
-        }
+.cart__container {
+  max-width: 1170px;
+  margin: 0 auto;
+  background-color: inherit;
+  padding-top: 140px;
+  @media (max-width: 1170px) {
+    & {
+      max-width: 904px;
     }
-    @media(max-width:904px){
-        &{
-            max-width: 704px;
-        }
+  }
+  @media (max-width: 904px) {
+    & {
+      max-width: 704px;
     }
-    @media(max-width:704px){
-        &{
-            max-width: 328px;
-        }
+  }
+  @media (max-width: 704px) {
+    & {
+      max-width: 328px;
     }
+  }
 }
-.cart-list{
-
-    &__title{
-        font-family: 'Nunito',sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 40px;
-        margin-bottom: 50px;
-        text-align: center;
+.cart-list {
+  &__title {
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 29px;
+    margin-bottom: 54px;
+    @media (max-width: 904px) {
+      & {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.81rem;
+      }
     }
-    &__list{
-        display: grid;
-        grid-template-columns: repeat(3,minmax(0,1fr));
-        gap:29px;
-        margin-bottom: 54px;
-        @media(max-width:904px){
-            &{
-                grid-template-columns: repeat(2,minmax(0,1fr));
-                gap:16px;
-            }
-        }
-        @media(max-width:704px){
-            &{
-                grid-template-columns: repeat(1,minmax(0,1fr));
-                gap:20px;
-            }
-        }
+    @media (max-width: 704px) {
+      & {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 20px;
+      }
     }
+  }
 }
 
-.cart-list__button{
-    margin: 0 0 140px 0;
-    &-container{
-        display: flex;
-        justify-content: center;
-    }
+.cart-list__button {
+  margin: 0 0 140px 0;
+  &-container {
+    display: flex;
+    justify-content: center;
+  }
 }

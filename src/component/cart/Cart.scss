@@ -1,6 +1,6 @@
 .cart {
   background-color: #fff;
-  padding-top: 20px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,6 +14,8 @@
     width: 70px;
     border-radius: 50%;
     object-fit: contain;
+    border-radius: 4.375rem;
+    overflow: hidden;
   }
   &__title {
     text-align: center;
@@ -22,6 +24,7 @@
     font-weight: 400;
     font-size: 16px;
     color: rgba($color: #000000, $alpha: 0.87);
+    line-height: 1.625rem;
   }
 
   &__text {
@@ -33,4 +36,7 @@
     line-height: 26px;
     color: rgba($color: #000000, $alpha: 0.87);
   }
+}
+
+.cart__text__show {
 }

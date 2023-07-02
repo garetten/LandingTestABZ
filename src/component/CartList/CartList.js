@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
 
-import Cart from '../cart/Cart'
-import Button from '../button/Button'
-
+import Cart from '../Cart/Cart'
+import Button from '../ui/Button/Button'
 import PostService from '../../API/PostService'
 
 import './CartList.scss'
+import Preloader from '../ui/Preloader/Preloader'
 
 export default function CartList({ page, setPage, cartArr, setCartArr }) {
   const [count, setCount] = useState(6)
@@ -23,7 +23,10 @@ export default function CartList({ page, setPage, cartArr, setCartArr }) {
   useEffect(() => {
     getCart()
   }, [page])
-
+  if (!cartArr.length) {
+    return <Preloader></Preloader>
+  }
+  console.log(cartArr)
   return (
     <div className='wrapper'>
       <div className='cart__container cart-list'>
